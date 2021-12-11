@@ -26,7 +26,9 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, "assets"),
+    static: {
+      directory: path.join(__dirname, "assets")
+    },
     compress: true,
     port: 9000,
   },
